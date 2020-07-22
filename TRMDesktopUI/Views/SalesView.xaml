@@ -20,7 +20,7 @@
         </Grid.RowDefinitions>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="15"/>
-            <ColumnDefinition Width="135"/>
+            <ColumnDefinition Width="auto"/>
             <ColumnDefinition Width="auto"/>
             <ColumnDefinition Width="auto"/>
             <ColumnDefinition Width="auto"/>
@@ -32,9 +32,9 @@
                    Grid.Column="0" Grid.ColumnSpan="3" Margin="0 0 0 20"/>
 
         <!-- Column 0 -->
-        <TextBlock Text="Items" Grid.Row="1" Grid.Column="0" Grid.RowSpan="2" Grid.ColumnSpan="2"/>
-        <ListBox x:Name="Products" Grid.Row="3" Grid.Column="0" 
-                  MinHeight="200" MinWidth="150" Grid.ColumnSpan="2">
+        <TextBlock Text="Items" Grid.Row="1" Grid.Column="1" Grid.RowSpan="2"/>
+        <ListBox x:Name="Products" Grid.Row="3" Grid.Column="1" 
+                  MinHeight="200" MinWidth="150" SelectedItem="{Binding SelectedProduct}">
             <ListBox.ItemTemplate>
                 <DataTemplate>
                     <TextBlock Text="{Binding ProductName}"/>
@@ -57,7 +57,13 @@
         <!-- Column 2 -->
         <TextBlock Text="Cart" Grid.Row="1" Grid.Column="3" Grid.RowSpan="2"/>
         <ListBox x:Name="Cart" Grid.Row="3" Grid.Column="3" 
-                  MinHeight="200" MinWidth="150"/>
+                  MinHeight="200" MinWidth="150">
+            <ListBox.ItemTemplate>
+                <DataTemplate>
+                    <TextBlock Text="{Binding DisplayText}"/>
+                </DataTemplate>
+            </ListBox.ItemTemplate>
+        </ListBox>
 
         <DockPanel  Grid.Row="4" Grid.Column="3">
             <TextBlock Text="SubTotal: " Margin="0 0 15 0"/>
