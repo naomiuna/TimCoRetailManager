@@ -15,9 +15,9 @@ A retail management system (practice c# application)
 - [x] Getting User Data Pt1
 - [x] Getting User Data Pt2
 - [x] Sales Page Creation
-- [ ] Event Aggregation in WPF
-- [ ] Display Product Data
-- [ ] Wire up WPF Shopping Cart
+- [x] Event Aggregation in WPF
+- [x] Display Product Data
+- [x] Wire up WPF Shopping Cart
 - [ ] Modifying SQL, the API and WPF to Add Taxes
 - [ ] Early Refactoring in C#
 - [ ] Posting Sales Data to an API
