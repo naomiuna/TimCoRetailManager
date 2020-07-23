@@ -22,9 +22,9 @@ A retail management system (practice c# application)
 - [x] Early Refactoring in C#
 - [x] Posting Sales Data to an API
 - [x] Automapper and INotifyPropertyChanged
-- [ ] C# Debugging and Clean Up
-- [ ] SQL Transactions in C# using Dapper
-- [ ] SQL Transaction Bug Fix
+- [x] C# Debugging and Clean Up
+- [x] SQL Transactions in C# using Dapper
+- [x] SQL Transaction Bug Fix
 - [ ] Admin Endpoints in WebAPI
 - [ ] Adding Roles to the API
 - [ ] User Permissions and Error Handling
