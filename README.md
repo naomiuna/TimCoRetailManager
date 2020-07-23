@@ -20,8 +20,8 @@ A retail management system (practice c# application)
 - [x] Wire up WPF Shopping Cart
 - [x] Modifying SQL, the API and WPF to Add Taxes
 - [x] Early Refactoring in C#
-- [ ] Posting Sales Data to an API
-- [ ] Automapper and INotifyPropertyChanged
+- [x] Posting Sales Data to an API
+- [x] Automapper and INotifyPropertyChanged
 - [ ] C# Debugging and Clean Up
 - [ ] SQL Transactions in C# using Dapper
 - [ ] SQL Transaction Bug Fix
