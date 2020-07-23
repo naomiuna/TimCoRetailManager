@@ -5,19 +5,19 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace TRMDesktopUI.Library.Helpers
+namespace TRMDataManager.Library
 {
-    public class ConfigHelper : IConfigHelper
+    public class ConfigHelper
     {
         // TODO: Move from config to API
-        public decimal GetTaxRate()
+        public static decimal GetTaxRate()
         {
-      
+
             string rateText = ConfigurationManager.AppSettings["taxRate"];
 
             bool IsValidTaxRate = Decimal.TryParse(rateText, out decimal output);
 
-            if(IsValidTaxRate == false)
+            if (IsValidTaxRate == false)
             {
                 throw new ConfigurationErrorsException("The tax rate is not set up properly");
             }
