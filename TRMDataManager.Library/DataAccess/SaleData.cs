@@ -17,7 +17,7 @@ namespace TRMDataManager.Library.DataAccess
             // start filling in sale detailmodels we will save to the database
             List<SaleDetailDBModel> details = new List<SaleDetailDBModel>();
             ProductData products = new ProductData();
-            var taxRate = ConfigHelper.GetTaxRate()/100;
+            var taxRate = ConfigHelper.GetTaxRate() / 100;
 
 
             foreach (var item in saleInfo.SaleDetails)
@@ -77,15 +77,23 @@ namespace TRMDataManager.Library.DataAccess
 
                     sql.CommitTransaction();
                 }
-                catch 
+                catch
                 {
 
                     sql.RollbackTransaction();
                     throw;
                 }
             };
-          
+
         }
-     
+
+        public List<SaleReportModel> GetSaleReport()
+        {
+            SqlDataAccess sql = new SqlDataAccess();
+
+            var output = sql.LoadData<SaleReportModel, dynamic>("dbo.spSale_SaleReport", new { }, "TRMData");
+
+            return output;
+        }
     }
 }
