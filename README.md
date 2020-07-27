@@ -25,11 +25,11 @@ A retail management system (practice c# application)
 - [x] C# Debugging and Clean Up
 - [x] SQL Transactions in C# using Dapper
 - [x] SQL Transaction Bug Fix
-- [ ] Admin Endpoints in WebAPI
-- [ ] Adding Roles to the API
-- [ ] User Permissions and Error Handling
-- [ ] Displaying Users and Groups/Roles
-- [ ] Managing User Roles
+- [x] Admin Endpoints in WebAPI
+- [x] Adding Roles to the API
+- [x] User Permissions and Error Handling
+- [x] Displaying Users and Groups/Roles
+- [x] Managing User Roles
 - [ ] Upgrading to .NET Core: Frontend Class Library
 - [ ] Upgrading to .NET Core: Backend Class Library
 - [ ] Upgrading to .NET Core: From WebAPI to ASP.NET Core API
