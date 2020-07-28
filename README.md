@@ -30,9 +30,9 @@ A retail management system (practice c# application)
 - [x] User Permissions and Error Handling
 - [x] Displaying Users and Groups/Roles
 - [x] Managing User Roles
-- [ ] Upgrading to .NET Core: Frontend Class Library
-- [ ] Upgrading to .NET Core: Backend Class Library
-- [ ] Upgrading to .NET Core: From WebAPI to ASP.NET Core API
+- [x] Upgrading to .NET Core: Frontend Class Library
+- [x] Upgrading to .NET Core: Backend Class Library
+- [x] Upgrading to .NET Core: From WebAPI to ASP.NET Core API
 - [ ] Upgrading to .NET Core: Adding JWT Authentication to API
 - [ ] Upgrading to .NET Core:  WPF to .NET Core
 - [ ] Planning Phase 2
